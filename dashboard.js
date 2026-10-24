@@ -60,7 +60,7 @@ function render() {
         <p class="track">${e.track}</p>
         <p class="concepts">${e.concepts}</p>
         <div class="links">
-          <a href="exercises/${e.slug}/index.html">Open exercise</a>
+          <a href="ide.html?exercise=${e.slug}">Start coding</a>
           <a href="exercises/${e.slug}/solution/index.html" class="ghost">Solution</a>
         </div>
       `;
@@ -68,4 +68,4 @@ function render() {
     });
 }
 
-render();
+if (grid && filters) render();
